@@ -1,4 +1,6 @@
 const header = document.getElementById("obsc-header");
+const page = (window.location.pathname.includes("index.html"))? "pages/":"";
+const pageIndexHtml = (window.location.pathname.includes("index.html"))? "":"../";
 
 const headerHTML = (
     `
@@ -6,13 +8,16 @@ const headerHTML = (
     <nav id="obsc-header-navigation-bar">
         <ul>
             <li>
-                <a href="index.html" class="text">Home</a>
+                <a href="${pageIndexHtml}index.html" class="text">Home</a>
             </li>
             <li>
-                <a href="about.html" class="text">About us</a>
+                <a href="${page}about.html" class="text">About us</a>
             </li>
             <li>
-                <a href="services.html" class="text">Services</a>
+                <a href="${page}services.html" class="text">Services</a>
+            </li>
+            <li>
+                <a href="${page}contact.html" class="text">Contact us</a>
             </li>
         </ul>
     </nav>
