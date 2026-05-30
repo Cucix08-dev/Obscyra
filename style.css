@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Obscyra";
+    src: url("fonts/Obscyra.otf") format("opentype");
+}
+
+
+:root{
+    --obscyra-gold: rgb(194, 166, 29);
+    --obscyra-light-gold: rgb(229, 213, 128);
+    --obscyra-background: rgb(0, 0, 0);
+}
+
+body{
+    color: var(--obscyra-gold);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#obsc-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: solid 2px var(--obscyra-gold);
+}
+
+#obsc-title{
+    font-family: 'Obscyra';
+    margin-left: 10px;
+    font-size: clamp(1rem, 2.2vw, 2rem);
+}
+
+#obsc-header-navigation-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+#obsc-header-navigation-bar ul li{
+    margin: 0 10px;
+    padding: 20px;
+    font-size: clamp(1rem, 2.2vw, 2rem);
+}
+
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+#obsc-header-navigation-bar ul li{
+    transition: transform ease 0.4s;
+}
+
+#obsc-header-navigation-bar ul li a{
+    transition: color ease 0.4s;
+}
+
+#obsc-header-navigation-bar ul li:hover{
+    transform: scale(1.2);
+    color: var(--obscyra-light-gold) !important;
+}
