@@ -8,16 +8,16 @@ const headerHTML = (
     <nav id="obsc-header-navigation-bar">
         <ul>
             <li>
-                <a href="${pageIndexHtml}index.html" class="text">Home</a>
+                <a href="Obscyra/${pageIndexHtml}index.html" class="text">Home</a>
             </li>
             <li>
-                <a href="${page}about.html" class="text">About us</a>
+                <a href="Obscyra/${page}about.html" class="text">About us</a>
             </li>
             <li>
-                <a href="${page}services.html" class="text">Services</a>
+                <a href="Obscyra/${page}services.html" class="text">Services</a>
             </li>
             <li>
-                <a href="${page}contact.html" class="text">Contact us</a>
+                <a href="Obscyra/${page}contact.html" class="text">Contact us</a>
             </li>
         </ul>
     </nav>
