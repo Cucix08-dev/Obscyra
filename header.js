@@ -1,6 +1,6 @@
 const header = document.getElementById("obsc-header");
 const page = (window.location.pathname.includes("index.html"))? "pages/":"";
-const pageIndexHtml = (window.location.pathname.includes("index.html"))? "":"../";
+const pageIndexHtml = (window.location.pathname.includes("index.html"))? "":"../index.html";
 
 const headerHTML = (
     `
@@ -31,7 +31,7 @@ const headerHTML = (
 
                 <ul id="smartphone-menu">
                     <li>
-                        <a href="${pageIndexHtml}index.html" class="text">Home</a>
+                        <a href="${pageIndexHtml}" class="text">Home</a>
                     </li>
                     <li>
                         <a href="${page}about.html" class="text">About us</a>
