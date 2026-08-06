@@ -116,7 +116,6 @@ text.show{
     border: solid 2px var(--obscyra-gold);
     border-radius: 10px;
     padding: 10px 0;
-    display: none;
     flex-direction: column;
     width: 180px;
     z-index: 999;
@@ -141,8 +140,6 @@ text.show{
     #menu-button{
         display: block;
     }
-
-    #menu-button.active + #smartphone-menu{
-        display: flex;
-    }
 }
+
+

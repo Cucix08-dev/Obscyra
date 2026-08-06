@@ -52,10 +52,17 @@ const headerHTML = `
 header.innerHTML = headerHTML;
 
 const hamburger = document.getElementById("hamburger-btn");
-const menuButton = document.getElementById("menu-button");
+const smartphoneMenu = document.getElementById("smartphone-menu");
 
-if (hamburger) {
+smartphoneMenu.style.display = "none";
+
+if (hamburger && smartphoneMenu) {
     hamburger.addEventListener("click", () => {
-        menuButton.classList.toggle("active");
+        if (smartphoneMenu.style.display === "flex") {
+            smartphoneMenu.style.display = "none";
+        } else {
+            smartphoneMenu.style.display = "flex";
+        }
     });
 }
+
