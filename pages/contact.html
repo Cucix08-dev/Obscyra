@@ -5,12 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obscyra Design</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header id="obsc-header">
     </header>
     
     <main id="obsc-main">
+        <div id="contact-container">
+            <h2>Contatti</h2>
+
+            <form class="contact-form">
+
+                <div class="input-group">
+                    <label for="email-sorgente">Email</label>
+                    <input 
+                        type="email" 
+                        id="email-sorgente" 
+                        name="email-sorgente" 
+                        placeholder="Inserisci la tua email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="oggetto">Oggetto</label>
+                    <input 
+                        type="text" 
+                        id="oggetto" 
+                        name="oggetto" 
+                        placeholder="Inserisci l'oggetto"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea 
+                        id="messaggio" 
+                        name="messaggio" 
+                        placeholder="Scrivi il tuo messaggio..."
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">Invia</button>
+            </form>
+        </div>
+
+
     </main>
 
     <footer id="obsc-footer">

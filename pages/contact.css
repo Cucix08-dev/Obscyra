@@ -1,0 +1,78 @@
+:root{
+    --obscyra-gold: rgb(194, 166, 29);
+    --obscyra-light-gold: rgb(229, 213, 128);
+    --obscyra-background: rgb(0, 0, 0);
+}
+
+#contact-container{
+    margin-top: 200px;
+    margin-left: 40px;
+    padding: 20px 60px 20px 20px;
+    width: 60%;
+    outline: solid 3px var(--obscyra-gold);
+    border-radius: 20px;
+    background: var(--obscyra-background);
+    color: var(--obscyra-gold);
+    font-family: 'Obscyra';
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--obscyra-gold);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--obscyra-gold);
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--obscyra-gold);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--obscyra-light-gold);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--obscyra-light-gold);
+    box-shadow: 0 0 6px rgba(229, 213, 128, 0.5);
+    outline: none;
+}
+
+.send-btn {
+    padding: 12px 18px;
+    background: var(--obscyra-gold);
+    color: var(--obscyra-background);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.send-btn:hover {
+    background: var(--obscyra-light-gold);
+}
+
+.send-btn:active {
+    transform: scale(0.97);
+}

@@ -74,6 +74,10 @@ a{
     color: var(--obscyra-light-gold) !important;
 }
 
+#obsc-main{
+    width: 100%;
+}
+
 .text{
     transform: translateX(-100%);
     transition: trasform ease-out 0.8s;
