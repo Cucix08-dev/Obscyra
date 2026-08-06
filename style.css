@@ -138,19 +138,11 @@ text.show{
         display: none;
     }
 
-    #smartphone-menu{
-        display: none;
-    }
-
     #menu-button{
         display: block;
     }
 
-    #menu-button.active #smartphone-menu{
+    #menu-button.active + #smartphone-menu{
         display: flex;
-    }
-
-    #menu-button #smartphone-menu{
-        display: none;
     }
 }
